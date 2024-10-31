@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "RapidReputation",
+  "version": "1.0",
+  "description": "Quickly search OSINT resources for IPs, domains, and hashes.",
+  "permissions": ["storage", "tabs", "activeTab", "omnibox"],
+  "omnibox": {
+    "keyword": "osint",
+    "description": "RapidReputation"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

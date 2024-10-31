@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RapidReputation - Full Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h2>RapidReputation</h2>
+        <button id="toggleDarkMode">🌙 Dark Mode</button>
+    </div>
+
+    <section>
+        <h3>How to Use</h3>
+        <p>Type <code>osint</code> in the address bar, press <kbd>Tab</kbd>, then enter any:</p>
+        <ul>
+            <li>IP address</li>
+            <li>Domain name</li>
+            <li>MD5, SHA1 or SHA256 hash</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Add New Search URL</h3>
+        <div class="form-group">
+            <input type="text" placeholder="Name (e.g., VirusTotal)" id="name">
+            <select id="type">
+                <option value="">Select Type</option>
+                <option value="ip">IP</option>
+                <option value="domain">Domain</option>
+                <option value="hash">Hash</option>
+                <option value="all">All</option>
+            </select>
+            <input type="text" placeholder="URL Template (use %s% for artifact)" id="url">
+            <button id="addUrl">+ Add URL</button>
+        </div>
+    </section>
+
+    <section>
+        <h3>Configured URLs</h3>
+        <label for="sortOptions">Sort By:</label>
+        <select id="sortOptions">
+            <option value="domain">Domain</option>
+            <option value="type">Type</option>
+        </select>
+        <ul id="urlList" class="configured-urls"></ul>
+    </section>
+
+    <script src="popup.js"></script>
+</body>
+</html>

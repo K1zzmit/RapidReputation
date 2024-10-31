@@ -1,0 +1,209 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f9f9f9;
+}
+
+/* Header section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2em;
+}
+
+.header h2 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+button#toggleDarkMode {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #ffcc00;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.dark-mode button#toggleDarkMode {
+    color: #ffcc00;
+}
+
+#sortOptions {
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+}
+
+.dark-mode #sortOptions {
+    background-color: #555;
+    color: #f9f9f9;
+    border: 1px solid #777;
+}
+
+.hidden {
+    display: none;
+}
+
+.favicon {
+    width: 16px;
+    height: 16px;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+
+
+section {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode section {
+    background-color: #444;
+    color: #ffffff;
+}
+
+section h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+input[type="text"], select, button#addUrl {
+    padding: 0.8em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.dark-mode input[type="text"], .dark-mode select {
+    background-color: #555;
+    color: #f9f9f9;
+    border: 1px solid #777;
+}
+
+button#addUrl {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+button#addUrl:hover {
+    background-color: #45a049;
+}
+
+.configured-urls {
+    list-style-type: none;
+    padding: 0;
+    max-width: 700px;
+}
+
+.domain-item {
+    margin-bottom: 1.5em;
+}
+
+.domain-header {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 0.5em;
+    background: #e0e0e0;
+    border-radius: 5px;
+}
+
+.dark-mode .domain-header {
+    background: #666;
+    color: #f9f9f9;
+}
+
+.favicon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.8em;
+}
+
+.toggle-icon {
+    margin-left: auto;
+}
+
+.url-group {
+    list-style-type: none;
+    padding-left: 1em;
+}
+
+.url-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+    padding: 0.8em;
+    background: #f0f0f0;
+    border-radius: 5px;
+}
+
+.dark-mode .url-item {
+    background: #555;
+    color: #f9f9f9;
+}
+
+.button-group {
+    display: flex;
+    gap: 0.5em;
+}
+
+.edit-btn, .delete-btn {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
